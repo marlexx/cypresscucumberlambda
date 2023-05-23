@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "cypress": "^12.12.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/stepDefinitions"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.1"
+  }
+}
