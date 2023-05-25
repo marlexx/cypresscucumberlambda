@@ -11,16 +11,14 @@ export class BootstrapDatePicker {
         this.todaysMonth = this.months[this.todaysDate.getMonth()];
 
         this.datePickerSwitch = '.datepicker-switch';
-        this.startDateYearSwitch = '.datepicker-months > .table-condensed > thead > :nth-child(2) > .datepicker-switch';
+        this.dateYearSwitch = '.datepicker-months > .table-condensed > thead > :nth-child(2) > .datepicker-switch';
         this.endDateYearSwitch = '[placeholder="End date"] ~ thead > :nth-child(2) > .datepicker-switch';
         this.yearButton = '.year';
         this.monthButton = '.month';
         this.dayButton = '.day';
 
-        this.prevStartYear = '.datepicker-years > .table-condensed > thead > :nth-child(2) > .prev';
-        this.nextStartYear = '.datepicker-years > .table-condensed > thead > :nth-child(2) > .next';
-        this.prevEndYear = '.datepicker-years > .table-condensed > thead > :nth-child(2) > .prev';
-        this.nextEndYear = '.datepicker-years > .table-condensed > thead > :nth-child(2) > .next';
+        this.prevYear = '.datepicker-years > .table-condensed > thead > :nth-child(2) > .prev';
+        this.nextYear = '.datepicker-years > .table-condensed > thead > :nth-child(2) > .next';
     }
 
     openDatePicker(datePicker) {
@@ -38,10 +36,10 @@ export class BootstrapDatePicker {
 
         cy.get(this.yearButton).first().invoke('text').then((text) => {
             if (parseInt(text) > parseInt(date[2])) {
-                cy.get(this.prevEndYear).click();
+                cy.get(this.prevYear).click();
                 this.findYearPage(date);
             } else if (parseInt(text) < parseInt(date[2]) - 11) {
-                cy.get(this.nextEndYear).click();
+                cy.get(this.nextYear).click();
                 this.findYearPage(date);
             } else {
                 cy.contains(this.yearButton, date[2]).click();
@@ -54,11 +52,11 @@ export class BootstrapDatePicker {
         cy.get(this.selectedPicker).invoke('val').then((value) => {
         if (value) {
             cy.contains(this.datePickerSwitch, this.months[parseInt(this.date[1]) - 1] + " " + this.date[2]).click();
-            cy.get(this.startDateYearSwitch).click();
+            cy.get(this.dateYearSwitch).click();
         }
         else {
             cy.contains(this.datePickerSwitch, this.todaysMonth + " " + this.todaysYear).click();
-            cy.get(this.startDateYearSwitch).click();
+            cy.get(this.dateYearSwitch).click();
         }
 
         this.date = dateString.split('/');
@@ -76,11 +74,11 @@ export class BootstrapDatePicker {
 
             if (value) {
                 cy.contains(this.datePickerSwitch, this.months[parseInt(this.date[1]) - 1] + " " + this.date[2]).click();
-                cy.get(this.startDateYearSwitch).click();
+                cy.get(this.dateYearSwitch).click();
             }
             else {
                 cy.contains(this.datePickerSwitch, this.todaysMonth + " " + this.todaysYear).click();
-                cy.get(this.startDateYearSwitch).click();
+                cy.get(this.dateYearSwitch).click();
             }
 
             this.date = dateString.split('/');
