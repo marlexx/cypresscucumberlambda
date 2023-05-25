@@ -6,6 +6,7 @@ import { JqueryDropdownSearch } from "../../POM/jqueryDropdownSearch";
 import { BootstrapDatePicker } from "../../POM/bootstrapDatePickerDemo";
 import { JavascriptAlertBox } from "../../POM/javascriptAlertBoxDemo";
 import { Uploadfile } from "../../POM/uploadFileDemo";
+import { Hover } from "../../POM/hoverDemo";
 
 // INPUT FORM DEMO
 {
@@ -211,4 +212,23 @@ import { Uploadfile } from "../../POM/uploadFileDemo";
     this.uploadFilePage.dragNDropFile();
   })
 }
+}
+
+// HOVER DEMO
+{
+  // hover buttons
+  {
+    Given('the user navigated to the hover demo', function () {
+      cy.visit('hover-demo');
+      this.hoverDemoPage = new Hover();
+    });
+
+    When('the user hovers on the {int} st [Hover Me] button', function (buttonNbr) {
+      this.hoverDemoPage.hoverButton(buttonNbr);
+    });
+
+    Then('the background color of the button changes', function () {
+      this.hoverDemoPage.assertColorOfButton(buttonNbr);
+    });
+  }
 }

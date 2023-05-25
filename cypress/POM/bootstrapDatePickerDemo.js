@@ -45,6 +45,7 @@ export class BootstrapDatePicker {
                 cy.contains(this.yearButton, date[2]).click();
             }
         });
+  
     }
 
     selectStartDate(dateString) {

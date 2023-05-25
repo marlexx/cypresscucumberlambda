@@ -10,7 +10,7 @@ export class JavascriptAlertBox{
     performClick(buttonNbr){
 
         cy.on('window:alert', this.stub1);
-
+        
         cy.get(this.buttons).eq(buttonNbr-1).click();
         
     }
