@@ -1,51 +1,71 @@
 <?xml version='1.0' encoding='utf-8'?>
-<testsuites tests="10" failures="1" errors="0" skipped="0" time="29.028"><testsuite name="Root Suite" timestamp="2023-05-24T11:53:12" tests="0" file="cypress\e2e\Features\simpleFormDemo\singleInputField.feature" time="0" failures="0" errors="0" skipped="0">
+<testsuites tests="14" failures="1" errors="0" skipped="0" time="44.25"><testsuite name="Root Suite" timestamp="2023-05-25T08:03:32" tests="0" file="cypress\e2e\Features\bootstrapDatePicker\startToEndDate.feature" time="0" failures="0" errors="0" skipped="0">
   </testsuite>
-  <testsuite name="[Single Input Field]" timestamp="2023-05-24T11:53:12" tests="2" time="2.823" failures="0" errors="0" skipped="0">
-    <testcase name="[Single Input Field] The user inputs a message and clicks the button" time="2.260" classname="The user inputs a message and clicks the button">
+  <testsuite name="[Start To End Date Picker]" timestamp="2023-05-25T08:03:32" tests="3" time="15.671" failures="0" errors="0" skipped="0">
+    <testcase name="[Start To End Date Picker] The user selects valid start and end dates" time="9.455" classname="The user selects valid start and end dates">
     </testcase>
-    <testcase name="[Single Input Field] The user inputs a message" time="0.563" classname="The user inputs a message">
+    <testcase name="[Start To End Date Picker] The user selects a start date that is after the end date" time="3.268" classname="The user selects a start date that is after the end date">
     </testcase>
-  </testsuite>
-<testsuite name="Root Suite" timestamp="2023-05-24T11:52:29" tests="0" file="cypress\e2e\Features\checkboxDemo\singleCheckbox.feature" time="0" failures="0" errors="0" skipped="0">
-  </testsuite>
-  <testsuite name="[Checkbox]" timestamp="2023-05-24T11:52:29" tests="1" time="1.948" failures="0" errors="0" skipped="0">
-    <testcase name="[Checkbox] The user checks the checkbox" time="1.948" classname="The user checks the checkbox">
+    <testcase name="[Start To End Date Picker] The user selects a end date that is before the start date" time="2.948" classname="The user selects a end date that is before the start date">
     </testcase>
   </testsuite>
-<testsuite name="Root Suite" timestamp="2023-05-24T11:52:04" tests="0" file="cypress\e2e\Features\bootstrapDatePicker\startToEndDate.feature" time="0" failures="0" errors="0" skipped="0">
+<testsuite name="Root Suite" timestamp="2023-05-25T08:05:06" tests="0" file="cypress\e2e\Features\jquerySelectDropdown\dropDownWithSearchBox.feature" time="0" failures="0" errors="0" skipped="0">
   </testsuite>
-  <testsuite name="[Start To End Date Picker]" timestamp="2023-05-24T11:52:04" tests="3" time="14.607" failures="0" errors="0" skipped="0">
-    <testcase name="[Start To End Date Picker] The user selects valid start and end dates" time="8.925" classname="The user selects valid start and end dates">
-    </testcase>
-    <testcase name="[Start To End Date Picker] The user selects a start date that is after the end date" time="2.630" classname="The user selects a start date that is after the end date">
-    </testcase>
-    <testcase name="[Start To End Date Picker] The user selects a end date that is before the start date" time="3.052" classname="The user selects a end date that is before the start date">
+  <testsuite name="[Dropdown with search box]" timestamp="2023-05-25T08:05:06" tests="1" time="4.888" failures="0" errors="0" skipped="0">
+    <testcase name="[Dropdown with search box] The user searches for &quot;Hong&quot; and selects &quot;Hong Kong&quot;" time="4.888" classname="The user searches for &quot;Hong&quot; and selects &quot;Hong Kong&quot;">
     </testcase>
   </testsuite>
-<testsuite name="Root Suite" timestamp="2023-05-24T11:52:59" tests="0" file="cypress\e2e\Features\jquerySelectDropdown\dropDownWithSearchBox.feature" time="0" failures="0" errors="0" skipped="0">
+<testsuite name="Root Suite" timestamp="2023-05-25T08:04:38" tests="0" file="cypress\e2e\Features\javascriptAlertBoxDemo\javascriptAlertBox.feature" time="0" failures="0" errors="0" skipped="0">
   </testsuite>
-  <testsuite name="[Dropdown with search box]" timestamp="2023-05-24T11:52:59" tests="1" time="4.287" failures="0" errors="0" skipped="0">
-    <testcase name="[Dropdown with search box] The user searches for &quot;Hong&quot; and selects &quot;Hong Kong&quot;" time="4.287" classname="The user searches for &quot;Hong&quot; and selects &quot;Hong Kong&quot;">
+  <testsuite name="[Javascript alert box]" timestamp="2023-05-25T08:04:38" tests="1" time="1.884" failures="0" errors="0" skipped="0">
+    <testcase name="[Javascript alert box] the user clicks the button" time="1.884" classname="the user clicks the button">
     </testcase>
   </testsuite>
-<testsuite name="Root Suite" timestamp="2023-05-24T11:52:40" tests="0" file="cypress\e2e\Features\inputFormSubmit\inputFormSubmit.feature" time="0" failures="0" errors="0" skipped="0">
+<testsuite name="Root Suite" timestamp="2023-05-25T08:05:53" tests="0" file="cypress\e2e\Features\uploadFileDemo\uploadFile.feature" time="0" failures="0" errors="0" skipped="0">
   </testsuite>
-  <testsuite name="[Submitting forms]" timestamp="2023-05-24T11:52:40" tests="1" time="0.0" failures="1" errors="0" skipped="0">
+  <testsuite name="[Uploading files]" timestamp="2023-05-25T08:05:53" tests="2" time="5.079" failures="0" errors="0" skipped="0">
+    <testcase name="[Uploading files] the user imports a file" time="3.939" classname="the user imports a file">
+    </testcase>
+    <testcase name="[Uploading files] the user drags and drops a file" time="1.140" classname="the user drags and drops a file">
+    </testcase>
+  </testsuite>
+<testsuite name="Root Suite" timestamp="2023-05-25T08:05:22" tests="0" file="cypress\e2e\Features\simpleFormDemo\singleInputField.feature" time="0" failures="0" errors="0" skipped="0">
+  </testsuite>
+  <testsuite name="[Single Input Field]" timestamp="2023-05-25T08:05:22" tests="2" time="5.587" failures="0" errors="0" skipped="0">
+    <testcase name="[Single Input Field] The user inputs a message and clicks the button" time="4.588" classname="The user inputs a message and clicks the button">
+    </testcase>
+    <testcase name="[Single Input Field] The user inputs a message" time="0.999" classname="The user inputs a message">
+    </testcase>
+  </testsuite>
+<testsuite name="Root Suite" timestamp="2023-05-25T08:04:51" tests="0" file="cypress\e2e\Features\javascriptAlertBoxDemo\javascriptPromptAlertBox.feature" time="0" failures="0" errors="0" skipped="0">
+  </testsuite>
+  <testsuite name="[Javascript prompt alert box]" timestamp="2023-05-25T08:04:51" tests="1" time="4.234" failures="0" errors="0" skipped="0">
+    <testcase name="[Javascript prompt alert box] the user clicks the button" time="4.234" classname="the user clicks the button">
+    </testcase>
+  </testsuite>
+<testsuite name="Root Suite" timestamp="2023-05-25T08:05:38" tests="0" file="cypress\e2e\Features\simpleFormDemo\twoInputFields.feature" time="0" failures="0" errors="0" skipped="0">
+  </testsuite>
+  <testsuite name="[Sum Two Input Fields]" timestamp="2023-05-25T08:05:38" tests="2" time="3.017" failures="0" errors="0" skipped="0">
+    <testcase name="[Sum Two Input Fields] The user inputs two numbers and clicks the button" time="2.101" classname="The user inputs two numbers and clicks the button">
+    </testcase>
+    <testcase name="[Sum Two Input Fields] The user inputs two symbols and clicks the button" time="0.916" classname="The user inputs two symbols and clicks the button">
+    </testcase>
+  </testsuite>
+<testsuite name="Root Suite" timestamp="2023-05-25T08:04:14" tests="0" file="cypress\e2e\Features\inputFormSubmit\inputFormSubmit.feature" time="0" failures="0" errors="0" skipped="0">
+  </testsuite>
+  <testsuite name="[Submitting forms]" timestamp="2023-05-25T08:04:14" tests="1" time="0.0" failures="1" errors="0" skipped="0">
     <testcase name="[Submitting forms] The user submits a valid form" time="0.000" classname="The user submits a valid form">
       <failure message="Timed out retrying after 4000ms: expected '&lt;p.success-msg.hidden&gt;' to contain 'Thanks for contacting us,fe we will get back to you shortly.'" type="AssertionError">AssertionError: Timed out retrying after 4000ms: expected '&lt;p.success-msg.hidden&gt;' to contain 'Thanks for contacting us,fe we will get back to you shortly.'
-    at inputForm.assertSubmit (cypress/POM/inputFormSubmit.js:42:32)
-    at Context.eval (cypress/e2e/stepDefinitions/steps.js:24:23)
+    at InputForm.assertSubmit (cypress/POM/inputFormSubmit.js:42:32)
+    at Context.eval (cypress/e2e/stepDefinitions/steps.js:26:23)
     at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
     at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</failure>
     </testcase>
   </testsuite>
-<testsuite name="Root Suite" timestamp="2023-05-24T11:53:24" tests="0" file="cypress\e2e\Features\simpleFormDemo\twoInputFields.feature" time="0" failures="0" errors="0" skipped="0">
+<testsuite name="Root Suite" timestamp="2023-05-25T08:03:58" tests="0" file="cypress\e2e\Features\checkboxDemo\singleCheckbox.feature" time="0" failures="0" errors="0" skipped="0">
   </testsuite>
-  <testsuite name="[Sum Two Input Fields]" timestamp="2023-05-24T11:53:24" tests="2" time="5.363" failures="0" errors="0" skipped="0">
-    <testcase name="[Sum Two Input Fields] The user inputs two numbers and clicks the button" time="4.329" classname="The user inputs two numbers and clicks the button">
-    </testcase>
-    <testcase name="[Sum Two Input Fields] The user inputs two symbols and clicks the button" time="1.034" classname="The user inputs two symbols and clicks the button">
+  <testsuite name="[Checkbox]" timestamp="2023-05-25T08:03:58" tests="1" time="3.89" failures="0" errors="0" skipped="0">
+    <testcase name="[Checkbox] The user checks the checkbox" time="3.890" classname="The user checks the checkbox">
     </testcase>
   </testsuite>
 </testsuites>

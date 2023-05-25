@@ -1,6 +1,6 @@
 import {faker} from "@faker-js/faker"
 
-export class inputForm {
+export class InputForm {
 
     constructor() {
         this.name = '#name'

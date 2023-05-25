@@ -1,4 +1,4 @@
-export class simpleForm{
+export class SimpleForm{
     constructor(){
         this.singleInput = "div.left-input > [id='user-message']";
         this.singleButton = "#showInput";

@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-export class jqueryDropdownSearch{
+export class JqueryDropdownSearch{
     constructor(){
         this.dropdownWSearch = '.select2-selection.select2-selection--single[aria-labelledby="select2-country-container"]';
         this.dropdownWSearchValue = '#select2-country-container';

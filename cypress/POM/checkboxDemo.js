@@ -1,5 +1,5 @@
 
-export class checkbox{
+export class Checkbox{
 
     constructor(){
         this.singleCheckbox = '#isAgeSelected';
